@@ -1,3 +1,14 @@
+@media screen and (max-width: 375px) {
+    .single-recommendation {
+        width: 327px;
+        height: 344px;
+    }
+    
+    .single-recommendation:nth-child(2) {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 774px) {
     .burger-button {
         display: block;
@@ -27,9 +38,21 @@
         flex-direction: column;
     }
 
-
     #middle-section img {
         height: 195px;
+    }
+
+    .single-recommendation {
+        width: 340px;
+        height: 316px;
+    }
+
+    .single-recommendation:nth-child(3) {
+        display: none;
+    }
+
+    .single-recommendation:first-child {
+        margin-left: 30px;
     }
 }
 
@@ -70,5 +93,17 @@
         height: 550px;
         width: 100%;
         object-fit: cover;
+    }
+
+    .single-recommendation {
+        width: 335.33px;
+        height: 344px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .single-recommendation {
+        width: 360px;
+        height: 316px;
     }
 }
