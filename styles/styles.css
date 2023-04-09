@@ -58,7 +58,8 @@ header nav ul a {
     color: #000000;
 }
 
-.action-button {
+.action-button,
+.action-button-white {
     width: 100px;
     height: 48px;
     font-style: normal;
@@ -72,6 +73,11 @@ header nav ul a {
     border: none;
 }
 
+.action-button-white {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 .burger-button {
     display: none;
     width: 25px;
@@ -83,6 +89,7 @@ header nav ul a {
 
 header nav ul li,
 .action-button:hover,
+.action-button-white:hover,
 .burger-button:hover {
     cursor: pointer;
 }
@@ -290,4 +297,47 @@ header nav ul li,
 
 .social-media img:not(:last-child) {
     margin-right: 16px;
+}
+
+#bottom-section {
+    width: 100vw;
+    height: 588px;
+}
+
+#bottom-section img {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+}
+
+.bottom-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    position: relative;
+    top: calc((-100% + (100% - 204px)/2));
+}
+
+.bottom-content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.bottom-content h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
 }
