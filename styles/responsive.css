@@ -1,24 +1,32 @@
-@media screen and (max-width: 375px) {
-    .single-recommendation {
-        width: 327px;
-        height: 344px;
+@media screen and (max-width: 744px) {
+    .burger-button {
+        display: block;
     }
-    
+
+    header nav .action-button,
+    header nav ul {
+        display: none;
+    }
+
+    .main-info-container img {
+        height: 309px;
+    }
+
+    #middle-section img {
+        height: 195px !important;
+    }
+
     .single-recommendation:not(:first-child) {
         display: none;
     }
 
-    .main-info-container {
-        display: flex;
-        flex-direction: column;
-        padding: 0 32px;
-        text-align: center;
+    .single-recommendation:not(:last-child) {
+        margin-right: 0;
     }
 
-    .bottom-content {
-        height: 144px;
-        width: 247px;
-        top: calc((-100% + (100% - 232px)/2));
+    .single-recommendation {
+        width: 327px;
+        height: 344px;
     }
 
     footer {
@@ -36,7 +44,7 @@
 
     .links {
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-bottom: 25px;
     }
 
@@ -44,62 +52,46 @@
         width: 100%;
     }
 
-    .subscription {
-        width: 100%;
-        align-items: center;
-    }
-
     .input-container {
         width: 100%;
     }
 }
 
-@media screen and (min-width: 376px) and (max-width: 774px) {
-    .burger-button {
-        display: block;
+@media screen and (min-width: 375px) and (max-width: 743px) {
+
+        
+    .bottom-content {
+        width: 247px;
+        top: -80%;
     }
 
-    header nav .action-button,
-    header nav ul {
-        display: none;
+    .bottom-content p,
+    .bottom-content h2 {
+        margin-bottom: 12px;
+    }
+
+    .subscription {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1023px) {
+    .main-info-container {
+        padding: 0 24px !important;
+    }
+
+    .main-info {
+        margin: 0 !important;
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1023px) {
+    .main-info-container img {
+        height: 499px;
     }
 
     .features-container {
-        flex-direction: column;
-        padding: 20px 24px;
-    }
-
-    .feature-box {
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        margin: 0;
-    }
-
-    .feature-box:not(:last-child) {
-        margin-bottom: 40px;
-    }
-
-    .main-info div {
-        flex-direction: column;
-    }
-
-    #middle-section {
-        padding: 24px;
-    }
-
-    .middle-section-content,
-    #middle-section  {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    #middle-section img {
-        width: 100%;
-        height: 550px;
-        margin-bottom: 29px;
+        margin-top: 0;
     }
 
     .single-recommendation {
@@ -115,10 +107,6 @@
         margin-left: 30px;
     }
 
-    #bottom-section {
-        height: 500px;
-    }
-
     .bottom-content {
         width: 100%;
         top: calc((-100% + (100% - 184px)/2));
@@ -128,12 +116,99 @@
         padding: 25px 22px;
     }
 
+    footer img {
+        margin-bottom: 20px;
+    }
+
+    .subscription {   
+        position: relative;
+        top: -30px;
+        width: 240px;
+    }
+
     .input-container {
         width: 218px;
     }
 }
 
-@media screen and (min-width: 775px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .main-info-container img {
+        height: 450px;
+    }
+
+    .features-container {
+        padding: 39px 32px;
+    }
+
+    .middle-section-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: start;
+    }
+
+    .middle-section-content h2,
+    .middle-section-content div {
+        width: 415px;
+    }
+
+    .single-recommendation {
+        width: 335.33px;
+        height: 344px;
+    }
+
+    footer {
+        padding: 45px 32px;
+    }
+
+    .links div {
+        width: 230px;
+    }
+
+    .subscription {
+        width: 228px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) {
+    .main-info div {
+        flex-direction: column;
+    }
+    .main-info div .action-button {
+        margin-bottom: 16px;
+    }
+
+    .main-info-container h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        padding: 20px 24px;
+    }
+
+    .feature-box {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-box:not(:last-child) {
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+
+    #recommendations {
+        margin: 30px 0;
+    }
+
+    #bottom-section {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1439px) {
     .main-info-container {
         display: flex;
         flex-direction: column;
@@ -143,66 +218,40 @@
 
     .main-info-container img {
         width: 100%;
-        height: 450px;
         margin-top: 68px;
     }
 
     .main-info {
         margin: 0 165px;
+        max-width: unset;
     }
 
-    .main-info div {
-        justify-content: center;
+    .recommendation {
+        margin-bottom: 24px !important;
     }
 
-    #middle-section {
+    #middle-section  {
         flex-direction: column;
-        padding: 32px;
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     .middle-section-content {
-        flex-direction: row;
         width: 100%;
+    }
+
+    #middle-section {
+        padding: 24px;
     }
 
     #middle-section img {
-        margin-bottom: 64px;
-        height: 550px;
         width: 100%;
-        object-fit: cover;
-    }
-
-    .single-recommendation {
-        width: 335.33px;
-        height: 344px;
+        height: 550px;
+        margin-bottom: 29px;
     }
 
     footer {
         flex-direction: column;
-        padding: 45px 32px;
-    }
-
-    .subscription {
-        width: 240px;
-    }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 1440px) {
-    .main-info-container {
-        padding: 0;
-    }
-    
-    .single-recommendation {
-        width: 360px;
-        height: 316px;
-    }
-
-    footer {
-        padding: 96px 120px;
-        justify-content: space-between;
-    }
-
-    .subscription {
-        width: 228px;
     }
 }
