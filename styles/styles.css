@@ -105,12 +105,10 @@ header nav ul li,
 }
 
 .main-info-container {
-    display: grid;
-    column-gap: 130px;
-    grid-template-columns: auto auto;
+    display: flex;
     width: 100vw;
     padding: 0 165px;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main-info-container h1 {
@@ -144,6 +142,10 @@ header nav ul li,
     height: 100%;
     border-radius: 12px;
     object-fit: cover;
+}
+
+.main-info {
+    max-width: 457px;
 }
 
 .main-info div {
@@ -426,4 +428,13 @@ footer img {
 .input-container i:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.join {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.4;
 }
