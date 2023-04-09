@@ -16,6 +16,20 @@
     #bottom-section img {
         object-fit: contain;
     }
+
+    footer {
+        padding: 50px 30px;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-container {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 774px) {
@@ -72,6 +86,14 @@
         width: 100%;
         top: calc((-100% + (100% - 184px)/2));
     }
+
+    footer {
+        padding: 25px 22px;
+    }
+
+    .input-container {
+        width: 218px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -117,11 +139,29 @@
         width: 335.33px;
         height: 344px;
     }
+
+    footer {
+        flex-direction: column;
+        padding: 45px 32px;
+    }
+
+    .subscription {
+        width: 240px;
+    }
 }
 
 @media screen and (max-width: 1440px) {
     .single-recommendation {
         width: 360px;
         height: 316px;
+    }
+
+    footer {
+        padding: 96px 120px;
+        justify-content: space-between;
+    }
+
+    .subscription {
+        width: 228px;
     }
 }
