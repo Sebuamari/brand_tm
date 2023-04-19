@@ -226,6 +226,10 @@
         max-width: unset;
     }
 
+    .main-info div {
+        justify-content: center;
+    }
+
     .recommendation {
         margin-bottom: 24px !important;
     }
