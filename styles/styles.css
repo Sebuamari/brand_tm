@@ -51,12 +51,14 @@ header nav ul li {
     align-items: center;
 }
 
-header nav ul a {
+header nav ul a,
+.mobile-menu ul a {
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.1px;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .action-button,
@@ -86,6 +88,71 @@ header nav ul a {
     background: #000000;
     border-radius: 32px;
     border: none;
+    z-index: 2;
+}
+
+.burger-button:hover {
+    transform: scale(1.5);
+}
+
+.burger-button-lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger-button-line {
+    width: 13px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    transition: 0.2s ease-in-out;
+    position: relative;
+}
+
+.burger-button-line.crossed {
+    width: 16px;
+}
+
+.crossed:first-child {
+    transform: rotate(45deg);
+    top: 2px;
+}
+
+.crossed:last-child {
+    transform: rotate(-45deg);
+    bottom: 1px;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    background-color: #F3F3F3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s ease-in-out;
+}
+
+.mobile-menu.hidden {
+    height: 0;
+    top: -500px;
+}
+
+.mobile-menu ul {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-menu a {
+    margin-bottom: 200px;
 }
 
 header nav ul li,
